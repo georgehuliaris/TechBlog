@@ -1,7 +1,10 @@
 {
     "cSpell.ignoreWords": [
+        "blogpost",
         "db",
-        "techblog"
+        "routes",
+        "techblog",
+        "utilis"
     ],
     "cSpell.words": [
         "exphbs",
