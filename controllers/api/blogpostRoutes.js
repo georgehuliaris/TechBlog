@@ -1,4 +1,4 @@
-// borrowed from 24 again, make sure to change what needs changing!!!!
+
 const router = require('express').Router();
 const { Blogpost } = require('../../model');
 const withAuth = require('../../utilis/auth');

@@ -1,4 +1,4 @@
-//borrowed from 24, make sure you change names!!!!!
+
 const router = require("express").Router();
 const { User } = require("../../model");
 

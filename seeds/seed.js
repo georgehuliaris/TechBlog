@@ -3,7 +3,7 @@ const { User, Blogpost } = require("../model");
 
 const userData = require("./userData.json");
 const BlogpostData = require("./seedData.json");
-// const { Blogpost } = require('../model');
+// { Blogpost } = require('../model');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -13,14 +13,16 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  //   for (const Blogpost of BlogpostData) {
-  //     await Blogpost.create({
-  //       ...Blogpost,
-  //       user_id: users[Math.floor(Math.random() * users.length)].id,
-  //     });
-  //   }
+    for (const Blogpost of BlogpostData) {
+      await Blogpost.create({
+        ...Blogpost,
+        user_id: users[Math.floor(Math.random() * users.length)].id,
+      });
+    }
 
   process.exit(0);
 };
 
 seedDatabase();
+
+module.exports = seed;
