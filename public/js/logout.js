@@ -1,4 +1,4 @@
-//borrowed from mini project, dont forget to change!
+//borrowed from mini Blogpost, don't forget to change!
 const logout = async () => {
     const response = await fetch('/api/users/logout', {
       method: 'POST',

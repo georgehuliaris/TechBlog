@@ -1,0 +1,12 @@
+body {
+    font-family: serif; 
+    background-color: silver;
+}
+
+h1 {
+    font: x-large Verdana, 
+    sans-serif; 
+    color: rgb(46, 225, 30);
+    border-bottom: thin black solid;
+}
+
